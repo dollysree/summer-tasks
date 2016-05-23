@@ -1,1 +1,1 @@
-Here are the phase-1 layouts of the news website
+Here is the task-1 of the news website
