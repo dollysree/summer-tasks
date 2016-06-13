@@ -21,7 +21,7 @@ class WebsiteController extends CI_Controller {
         $data['news'] = $this->Website_model->get_news();
         $data['title'] = 'News Website';
 
-        $this->load->view('website/navbar.html', $data);
+        $this->load->view('website/navbar', $data);
       
 }
 
@@ -29,16 +29,15 @@ class WebsiteController extends CI_Controller {
         {
                 $data['news_item'] = $this->Website_model->get_news($slug);
 				
-				if (empty($data['news_item']))
+			/*	if (empty($data['news_item']))
         {
                 show_404();
-        }
+        }*/
 
         $data['title'] = $data['news_item']['title'];
 
-        $this->load->view('templates/header', $data);
         $this->load->view('website/view', $data);
-        $this->load->view('templates/footer');
+ 
         }
 		public function addarticle()
 {
@@ -81,6 +80,30 @@ class WebsiteController extends CI_Controller {
     else
     {
         $this->load->view('website/admin.html');
+    }
+}
+public function editart()
+{
+    $this->load->helper('form');
+    $this->load->library('form_validation');
+
+    $data['title'] = 'Edit a news item';
+
+    $this->form_validation->set_rules('title', 'Title', 'required');
+    $this->form_validation->set_rules('content', 'Content', 'required');
+     $this->form_validation->set_rules('id', 'Article id', 'required');
+    $this->form_validation->set_rules('status', 'Status', 'required');
+
+    if ($this->form_validation->run() === FALSE)
+    {
+        $this->load->view('website/editart');
+  
+
+    }
+    else
+    {
+        $this->Website_model->edit_news();
+        $this->load->view('website/success1');
     }
 }
 }
