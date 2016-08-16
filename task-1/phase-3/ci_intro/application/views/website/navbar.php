@@ -5,12 +5,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="http://localhost:1234/ci_intro/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
  
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-<link rel="stylesheet"  type="text/css" href="/css/navbar.css" />
+<link rel="stylesheet" type="text/css" href="http://localhost:1234/ci_intro/css/navbar.css" />
 </head>
 
 <body>
@@ -31,7 +31,7 @@
        <li><a href="#">Articles</a></li>
      </ul>
      <ul class="nav navbar-nav navbar-right">
-     <li><a href="file:///C|/Users/ramana/Desktop/summer-tasks/summer-tasks/task-1/phase-3/views/website/login.html">Login</a></li>
+     <li><a href="login">Login</a></li>
      </ul>
    </div>
   </div>
@@ -91,7 +91,7 @@
 <?php foreach ($news as $news_item): ?>
     <li>  <a href="<?php echo site_url('news/'.$news_item['slug']); ?>" title="<?php echo $news_item['title']; ?>">
     <img src="li4 img.jpg" width="100"; height="70px"; /></a>
-       <a href="<?php echo site_url('news/'.$news_item['slug']); ?>"><?php echo $news_item['title']; ?></a></p>
+       <a href="<?php echo site_url('websitecontroller/view/'.$news_item['slug']); ?>"><?php echo $news_item['title']; ?></a></p>
    </li>
 <?php endforeach; ?>
 
@@ -124,24 +124,24 @@
     Not to be Missed</div>
     <ul>
     <li>
-   <a href="file:///C|/Users/ramana/Desktop/summer-tasks/summer-tasks/task-1/phase-3/views/website/li3.html" title="World's largest cargo aircraft Antonov An-225 lands at Hyderabad airport">
+   <a href="#" title="World's largest cargo aircraft Antonov An-225 lands at Hyderabad airport">
     <img src="li3 img.jpg" width="100"; height="70px"; /></a>
-  <a href="file:///C|/Users/ramana/Desktop/summer-tasks/summer-tasks/task-1/phase-3/views/website/li3.html">World's largest cargo aircraft Antonov An-225 lands at Hyderabad airport</a>
+  <a href="#">World's largest cargo aircraft Antonov An-225 lands at Hyderabad airport</a>
   </li>
   <li>
-  <a href="file:///C|/Users/ramana/Desktop/summer-tasks/summer-tasks/task-1/phase-3/views/website/li5.html" title="Woman allegedly raped at Infosys campus in Pune">
+  <a href="#" title="Woman allegedly raped at Infosys campus in Pune">
     <img src="li5 img.jpg" width="100"; height="70px"; /></a>
-  <a href="file:///C|/Users/ramana/Desktop/summer-tasks/summer-tasks/task-1/phase-3/views/website/li5.html">Woman allegedly raped at Infosys campus in Pune</a>
+  <a href="#">Woman allegedly raped at Infosys campus in Pune</a>
   </li>
   <li>
-  <a href="file:///C|/Users/ramana/Desktop/summer-tasks/summer-tasks/task-1/phase-3/views/website/li4.html" title="Salman Khan's 'hit-&-run victim' moves Supreme Court">
+  <a href="#" title="Salman Khan's 'hit-&-run victim' moves Supreme Court">
     <img src="li4 img.jpg" width="100"; height="70px"; /></a>
-  <a href="file:///C|/Users/ramana/Desktop/summer-tasks/summer-tasks/task-1/phase-3/views/website/li4.html">Salman Khan's 'hit-&-run victim' moves Supreme Court</a>
+  <a href="#">Salman Khan's 'hit-&-run victim' moves Supreme Court</a>
   </li>
   <li>
-  <a href="file:///C|/Users/ramana/Desktop/summer-tasks/summer-tasks/task-1/phase-3/views/website/li6.html" title="Get passport in a week by giving four documents">
+  <a href="#" title="Get passport in a week by giving four documents">
     <img src="li6 img.jpg" width="100"; height="70px"; /></a>
-  <a href="file:///C|/Users/ramana/Desktop/summer-tasks/summer-tasks/task-1/phase-3/views/website/li6.html">Get passport in a week by giving four documents</a>
+  <a href="#">Get passport in a week by giving four documents</a>
   </li>
   </ul>
   </div>
@@ -161,8 +161,8 @@
    <div class="col-md-3" style="background-color:#C00; height:200px; padding:15px;">
   <p style="font-size:15px; text-align:left; padding-left:15px; margin-left:10px;">
  FOLLOW US:<br />
- <img src="fb img.png" width="44px"; height="44px"; />&nbsp;
- <img src="b img.png" width="44px"; height="44px"; />
+ <img src="http://localhost:1234/ci_intro/imgs/fb img.png" width="44px"; height="44px"; />&nbsp;
+ <img src="http://localhost:1234/ci_intro/imgs/b img.png" width="44px"; height="44px"; />
  </p>
  </div>
   </div> 

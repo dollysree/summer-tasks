@@ -47,9 +47,9 @@ class WebsiteController extends CI_Controller {
     $data['title'] = 'Create a news item';
 
     $this->form_validation->set_rules('title', 'Title', 'required');
-    $this->form_validation->set_rules('textarea', 'Text', 'required');
+    $this->form_validation->set_rules('text', 'Text', 'required');
 
-    if ($this->form_validation->run() === FALSE)
+    if ($this->form_validation->run() === false)
     {
         $this->load->view('website/addarticle');
   
@@ -61,7 +61,11 @@ class WebsiteController extends CI_Controller {
         $this->load->view('website/success');
     }
 }
-	public function login()
+
+public function login()
+{ $this->load->view('website/login');}
+
+/*	public function login()
 {
     $this->load->helper('form');
     $this->load->library('form_validation');
@@ -79,8 +83,13 @@ class WebsiteController extends CI_Controller {
     }
     else
     {
-        $this->load->view('website/admin.html');
+        $this->load->view('website/admin');
     }
+}*/
+
+	public function admin()
+{
+	  $this->load->view('website/admin');
 }
 public function editart()
 {
@@ -90,9 +99,8 @@ public function editart()
     $data['title'] = 'Edit a news item';
 
     $this->form_validation->set_rules('title', 'Title', 'required');
-    $this->form_validation->set_rules('content', 'Content', 'required');
-     $this->form_validation->set_rules('id', 'Article id', 'required');
-    $this->form_validation->set_rules('status', 'Status', 'required');
+    $this->form_validation->set_rules('text', 'Text', 'required');
+    
 
     if ($this->form_validation->run() === FALSE)
     {

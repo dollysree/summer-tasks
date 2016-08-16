@@ -5,11 +5,11 @@
 <title><?php echo $news_item['title']; ?></title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="http://localhost:1234/ci_intro/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
  
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<link rel="stylesheet"; type="text/css" href="/css/main2.css"; />
+<link rel="stylesheet"; type="text/css" href="http://localhost:1234/ci_intro/css/main2.css"; />
 </head>
 <body>
  <div class="container-fluid">
@@ -25,11 +25,11 @@
    </div>-->
    <div>
      <ul class="nav navbar-nav">
-       <li><a href="navbar.html">Home</a></li>
+       <li><a href="http://localhost:1234/ci_intro/WebsiteController/">Home</a></li>
        <li class="active"><a href="#">Articles</a></li>
      </ul>
      <ul class="nav navbar-nav navbar-right">
-     <li><a href="login.html">Login</a></li>
+     <li><a href="http://localhost:1234/ci_intro/WebsiteController/login">Login</a></li>
      </ul>
    </div>
   </div>
@@ -44,19 +44,19 @@
     Most Popular</div>
      <ul>
     <li>
-   <a href="li3.html" title="World's largest cargo aircraft Antonov An-225 lands at Hyderabad airport">
+   <a href="#" title="World's largest cargo aircraft Antonov An-225 lands at Hyderabad airport">
     <img src="li3 img.jpg" width="100"; height="70px"; /></a>
-  <a href="li3.html">World's largest cargo aircraft Antonov An-225 lands at Hyderabad airport</a>
+  <a href="#">World's largest cargo aircraft Antonov An-225 lands at Hyderabad airport</a>
   </li>
   <li>
-  <a href="li5.html" title="Woman allegedly raped at Infosys campus in Pune">
+  <a href="#" title="Woman allegedly raped at Infosys campus in Pune">
     <img src="li5 img.jpg" width="100"; height="70px"; /></a>
-  <a href="li5.html">Woman allegedly raped at Infosys campus in Pune</a>
+  <a href="#">Woman allegedly raped at Infosys campus in Pune</a>
   </li>
   <li>
-  <a href="li4.html" title="Salman Khan's 'hit-&-run victim' moves Supreme Court">
+  <a href="#" title="Salman Khan's 'hit-&-run victim' moves Supreme Court">
     <img src="li4 img.jpg" width="100"; height="70px"; /></a>
-  <a href="li4.html">Salman Khan's 'hit-&-run victim' moves Supreme Court</a>
+  <a href="#">Salman Khan's 'hit-&-run victim' moves Supreme Court</a>
   </li>
   </ul>
  
@@ -86,8 +86,8 @@ echo $news_item['text'];
    <div class="col-md-3" style="background-color:#C00; height:200px; padding:15px;">
   <p style="font-size:15px; text-align:left; padding-left:15px; margin-left:10px;">
  FOLLOW US:<br />
- <img src="fb img.png" width="44px"; height="44px"; />&nbsp;
- <img src="b img.png" width="44px"; height="44px"; />
+ <img src="http://localhost:1234/ci_intro/imgs/fb img.png" width="44px"; height="44px"; />&nbsp;
+ <img src="http://localhost:1234/ci_intro/imgs/b img.png" width="44px"; height="44px"; />
  </p>
  </div>
 

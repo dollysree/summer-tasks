@@ -6,11 +6,11 @@
 <title>Edit article</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="http://localhost:1234/ci_intro/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
  
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<link rel="stylesheet"; type="text/css" href="/css/addart.css"; />
+<link rel="stylesheet"; type="text/css" href="http://localhost:1234/ci_intro/css/addart.css"; />
 </head>
 <body>
  <div class="container-fluid">
@@ -30,7 +30,7 @@
        <li><a href="#">Articles</a></li>
      </ul>
      <ul class="nav navbar-nav navbar-right">
-     <li><a href="navbar.html">Logout</a></li>
+     <li><a href="index">Logout</a></li>
      </ul>
    </div>
   </div>
@@ -107,11 +107,11 @@
   </div> 
   <div class="row">
      <div class="col-md-7" style=" margin-left:25px; margin-right:25px">
-     Content:
+     Text:
   <table class="table">
     <tr>
       <td>
-         <textarea name="textarea" style="width:100%; height:200px;" name="content" ></textarea></td>
+         <textarea name="text" style="width:100%; height:200px;"  ></textarea></td>
      </tr>
      <tr>    
          <td>

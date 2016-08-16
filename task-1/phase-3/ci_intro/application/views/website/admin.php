@@ -2,16 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>admin panel</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="http://localhost:1234/ci_intro/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<link rel="stylesheet" href="http://localhost:1234/ci_intro/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" type="text/css" href="/css/admin.css" />
+<link rel="stylesheet" type="text/css" href="http://localhost:1234/ci_intro/css/admin.css" />
 </head>
 
 <body>
@@ -26,7 +26,7 @@
    <ul class="sidebar-nav">
     <li><a href="#">Account</a></li>
       <li><a href="#">settings</a></li>
-       <li><a href="login.html">Logout</a></li>
+       <li><a href="login">Logout</a></li>
     </ul>
    </div>
    <!--pagecontent-->
@@ -38,14 +38,14 @@
           <p>what do u want to do?</p>
            <div class="row">
              <div class="col-md-6">
-                 <a href="addart.html">
-                 <img src="pencil_48.png" /><br /> 
+                 <a href="addarticle">
+                 <img src="http://localhost:1234/ci_intro/imgs/pencil_48.png" /><br /> 
                  Add Article </a> 
                 </div>  </div> <br />
                    <div class="row">
                  <div class="col-md-6 ">
-                 <a href="editart.html">
-                 <img src="paper_content_pencil_48.png" /><br />
+                 <a href="editart">
+                 <img src="http://localhost:1234/ci_intro/imgs/paper_content_pencil_48.png" /><br />
                  Edit Article </a> 
                </div></div>
       </div>
