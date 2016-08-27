@@ -78,7 +78,7 @@
              <tr>
              <td>Text:</td>
            
-             <td> <textarea name="text"  style=" width:100%;  height:200px;"><?php echo $news_item['text'];?></textarea></td>
+             <td> <textarea name="text"  style=" width:100%;  height:450px;"><?php echo $news_item['text'];?></textarea></td>
              </tr>
              <tr>    
                 <td> <input type="submit" value="update" name="button" /></td> 
