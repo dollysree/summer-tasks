@@ -5,11 +5,10 @@
 <title>Add article</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-<link rel="stylesheet" href="http://localhost:1234/ci_intro/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="<?php echo site_url('resourses/css/bootstrap.min.css'); ?>" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
  
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<link rel="stylesheet"; type="text/css" href="http://localhost:1234/ci_intro/css/addart.css"; />
+
+<link rel="stylesheet"; type="text/css" href="<?php echo site_url('resourses/css/addart.css'); ?>"; />
 </head>
 <body>
  <div class="container-fluid">
@@ -19,17 +18,14 @@
  </div>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-   <!--logo
-   <div class="navbar-header">
-    <a href="#" class="navbar-brand">the news website</a>
-   </div>-->
+ 
    <div>
      <ul class="nav navbar-nav">
        <li ><a href="#">Home</a></li>
        <li><a href="#">Articles</a></li>
      </ul>
      <ul class="nav navbar-nav navbar-right">
-     <li><a href="index">Logout</a></li>
+     <li><a href="<?php echo site_url(); ?>">Logout</a></li>
      </ul>
    </div>
   </div>
@@ -43,68 +39,34 @@
       <div class="row">
          <div class="col-md-8" style="background-color:#fff; margin-left:25px;">
          <?php echo validation_errors(); ?>
-
-         <?php echo form_open('WebsiteController/addarticle'); ?>
-
+         <?php echo $error; ?>
+         <?php echo form_open('Site/addarticle'); ?>
+          <form enctype="multipart/form-data">
            <table class="table">
              <tr>
                <td>Title</td>
                <td><input type="text" name="title" /></td>
              </tr>
-              <tr>
-               <td>Category</td>
-               <td><select>
-                   <option>-About us-</option>
-                   <option></option>
-                   <option></option>
-                   </select>               
-               
-               </td>
+             <tr>
+               <td>Author</td>
+               <td><input type="text" name="author" /></td>
              </tr>
-              <tr>
+             
+             <!-- <tr>
                <td>Status</td>
                <td><select>
                    <option>Unpublished</option>
                    <option>Published</option>
                    </select>
                    </td>
-             </tr>
+             </tr>-->
+
               <tr>
-               <td>Access</td>
-               <td><select>
-                   <option>public</option>
-                   <option>private</option>
-                   </select>
-                   </td>
+               <td>Image</td>
+               <td><input type="file" name="image"  </td>
              </tr>
-              <tr>
-               <td>Featured</td>
-               <td><select>
-                   <option>No</option>
-                   <option>yes</option>
-                   </select>
-                   </td>
-             </tr>
-              <tr>
-               <td>Permissions</td>
-               <td><input type="button" value="Set permissions" /> </td>
-             </tr>
-              <tr>
-               <td>Language</td>
-               <td><select>
-                   <option>All</option>
-                   <option>English</option>
-                    <option>Hindhi</option>
-                   <option>Telugu</option>
-                    <option>Tamil</option>
-                   <option>Odiya</option>
-                   </select>
-                   </td>
-             </tr>
-              <tr>
-               <td>ID</td>
-               <td>0</td>
-             </tr>
+
+            
              <tr>
              <td>Text:</td>
            
@@ -123,8 +85,7 @@
    </div>
   </div>
   
-          
-
-<body>
+   <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>       
 </body>
 </html>
